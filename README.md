@@ -1,6 +1,8 @@
 # Sorting-Algorithm-Visualizer
 This is a project that I created to visualize Sorting Algorithms. 
 
+![alt text](https://github.com/sergioq12/Sorting-Algorithm-Visualizer/blob/main/Project_Image.png?raw=true)
+
 ### Description
 This project encompasses some Sorting Algorithms such as:
 - Selection Sort
