@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="sorting_visualizer.css" />
+  </head>
+  <body>
+    <div class="top-container">
+      <span id="arrSize"
+        >Array Size
+        <input
+          id="array_size"
+          type="range"
+          min="20"
+          max="150"
+          step="1"
+          value="60"
+        />
+      </span>
+      <h1>Sorting Visualizer <span>By: Sergio Quijano</span></h1>
+      <span id="speed"
+        >
+        <input
+          id="speed_value"
+          type="range"
+          min="1"
+          max="100"
+          step="1"
+          value="60"
+        />Speed
+      </span>
+    </div>
+    <div class="sorting-container"></div>
+    <div class="button-container">
+      <button id="newArray">Generate new Array</button>
+      <button id="selectionSort">Selection Sort</button>
+      <button id="bubbleSort">Bubble Sort</button>
+      <button id="insertionSort">Insertion Sort</button>
+      <button id="mergeSort">Merge Sort</button>
+      <button id="quickSort">Quick Sort</button>
+    </div>
+    <script type="module">
+      import { generateNewArray } from "./algorithms/sorting_visualizer.js";
+      const arraySizeInput = document.querySelector('#array_size');
+      generateNewArray(parseInt(arraySizeInput.value));
+    </script>
+    <script src="./algorithms/sorting_visualizer.js" type="module"></script>
+    <script src="./algorithms/selectionSort.js" type="module"></script>
+    <script src="./algorithms/bubbleSort.js" type="module"></script>
+    <script src="./algorithms/insertionSort.js" type="module"></script>
+    <script src="./algorithms/mergeSort.js" type="module"></script>
+    <script src="./algorithms/quickSort.js" type="module"></script>
+  </body>
+</html>
