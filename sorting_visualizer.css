@@ -1,65 +1,67 @@
 body {
-    font-family: "Avenir";
+  font-family: "Avenir";
 }
 
 h1 {
-    font-size: 5rem;
-    text-align: center;
-    margin-top: 0rem;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 0rem;
 }
 
 span {
-    font-size: 1rem;
+  font-size: 0.5rem;
 }
 
 .top-container {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .sorting-container {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: flex-end;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .sorting-bar {
-    margin: 0px 2px;
-    width: 5px;
-    background-color: aqua;
+  margin: 0px 2px;
+  width: 5px;
+  background-color: aqua;
 }
 
 .button-container {
-    margin-top: 3rem;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
 
 button {
-    border: none;
-    outline: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    padding: 1rem;
-    font-family: "Avenir";
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  font-family: "Avenir";
 }
 
-#input{
-    display: flex;
-    padding: 10px;
-    justify-content: space-around;
+#input {
+  display: flex;
+  padding: 10px;
+  justify-content: space-around;
 }
 
 #speed {
-    margin-top: 3rem;
-    margin-left: 5rem;
-    font-size: 2rem;
+  margin-top: 3rem;
+  margin-left: 5rem;
+  font-size: 1rem;
+  text-align: center;
 }
 
 #arrSize {
-    margin-top: 3rem;
-    margin-right: 5rem;
-    font-size: 2rem;
+  margin-top: 3rem;
+  margin-right: 5rem;
+  font-size: 1rem;
+  text-align: center;
 }

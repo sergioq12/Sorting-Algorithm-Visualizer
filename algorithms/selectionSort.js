@@ -1,4 +1,11 @@
-import {generateNewArray, wait, swap, disableButtons, getBars, speed} from "./sorting_visualizer.js";
+import {
+  generateNewArray,
+  wait,
+  swap,
+  disableButtons,
+  getBars,
+  speed,
+} from "./sorting_visualizer.js";
 
 const selectionSortButton = document.getElementById("selectionSort");
 var bars = getBars();
@@ -30,14 +37,14 @@ function selectionSortSynchronous() {
     }
     bars[i].style.background = "green";
   }
-};
+}
 
-// selectionSortButton.addEventListener("click", async function () {
-//   disableButtons();
-//   await selectionSort();
-// });
-
-selectionSortButton.addEventListener("click", function () {
+selectionSortButton.addEventListener("click", async function () {
   disableButtons();
-  selectionSortSynchronous();
+  await selectionSort();
 });
+
+// selectionSortButton.addEventListener("click", function () {
+//   disableButtons();
+//   selectionSortSynchronous();
+// });

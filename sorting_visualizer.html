@@ -15,14 +15,14 @@
           id="array_size"
           type="range"
           min="20"
-          max="150"
+          max="80"
           step="1"
           value="60"
         />
       </span>
       <h1>Sorting Visualizer <span>By: Sergio Quijano</span></h1>
-      <span id="speed"
-        >
+      <span id="speed">
+        Speed
         <input
           id="speed_value"
           type="range"
@@ -30,7 +30,7 @@
           max="100"
           step="1"
           value="60"
-        />Speed
+        />
       </span>
     </div>
     <div class="sorting-container"></div>
@@ -44,7 +44,7 @@
     </div>
     <script type="module">
       import { generateNewArray } from "./algorithms/sorting_visualizer.js";
-      const arraySizeInput = document.querySelector('#array_size');
+      const arraySizeInput = document.querySelector("#array_size");
       generateNewArray(parseInt(arraySizeInput.value));
     </script>
     <script src="./algorithms/sorting_visualizer.js" type="module"></script>

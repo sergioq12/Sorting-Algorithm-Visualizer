@@ -2,7 +2,7 @@ var container = document.getElementsByClassName("sorting-container")[0];
 function generateNewArray(size) {
   container.innerHTML = "";
   for (let i = 0; i < size; i++) {
-    let random_height = Math.random() * 700;
+    let random_height = Math.random() * 250;
     container.innerHTML += `<div class='sorting-bar' style='height: ${random_height}px'><div>`;
   }
 }
