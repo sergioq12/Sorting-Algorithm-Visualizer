@@ -1,4 +1,4 @@
-var container = document.getElementsByClassName("sorting-container")[0];
+const container = document.getElementsByClassName("sorting-container")[0];
 function generateNewArray(size) {
   container.innerHTML = "";
   for (let i = 0; i < size; i++) {
@@ -6,13 +6,20 @@ function generateNewArray(size) {
     container.innerHTML += `<div class='sorting-bar' style='height: ${random_height}px'><div>`;
   }
 }
-
-var newArrayButton = document.getElementById("newArray");
+// Generate arrays
+const newArrayButton = document.getElementById("newArray");
 newArrayButton.addEventListener("click", () => {
   const arraySizeInput = document.querySelector("#array_size");
   generateNewArray(parseInt(arraySizeInput.value));
 });
 
+// Reload button functionality
+const reloadButton = document.getElementById("reload-page");
+reloadButton.addEventListener("click", () => {
+  window.location.reload();
+});
+
+// Wait some miliseconds using JS Promise to wait
 function wait(milisec) {
   return new Promise((resolve) => {
     setTimeout(() => {
@@ -27,6 +34,7 @@ function swap(element1, element2) {
   element2.style.height = temp;
 }
 
+// Disable buttons
 function disableButtons() {
   document.getElementById("newArray").disabled = true;
   document.getElementById("selectionSort").disabled = true;
@@ -37,6 +45,7 @@ function disableButtons() {
   document.getElementById("array_size").disabled = true;
 }
 
+// Enable buttons
 function enableButtons() {
   document.getElementById("newArray").disabled = false;
   document.getElementById("selectionSort").disabled = false;
@@ -62,7 +71,6 @@ const arraySizeInput = document.querySelector("#array_size");
 // Event listener to update speed
 arraySizeInput.addEventListener("input", () => {
   generateNewArray(parseInt(arraySizeInput.value));
-
 });
 
 export { generateNewArray, wait, swap, disableButtons, getBars, speed };
